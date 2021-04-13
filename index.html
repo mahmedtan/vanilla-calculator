@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <div class="text" id="result-box">0</div>
+        <button
+          id="clear"
+          class="operation"
+          onclick="document.getElementById('result-box').innerHTML = 0;"
+        >
+          C
+        </button>
+        <button id="square" class="operation" onclick="square()">
+          x<sup>2</sup>
+        </button>
+        <button id="1/x" class="operation" onclick="reciprocal()">1/x</button>
+        <button id="sqroot" class="operation" onclick="root()">√</button>
+        <button id="/" class="operation" onclick="myFunc('/')">/</button>
+        <button id="MC" class="variable" onclick="memoryClear()">MC</button>
+
+        <button id="7" class="operand" onclick="myFunc(7)">7</button>
+        <button id="8" class="operand" onclick="myFunc(8)">8</button>
+        <button id="9" class="operand" onclick="myFunc(9)">9</button>
+
+        <button onclick="myFunc('+')">+</button>
+        <button id="MS" class="variable" onclick="memoryStore()">MS</button>
+
+        <button id="4" class="operand" onclick="myFunc(4)">4</button>
+        <button id="5" class="operand" onclick="myFunc(5)">5</button>
+        <button id="6" class="operand" onclick="myFunc(6)">6</button>
+        <button id="-" class="operation" onclick="myFunc('-')">-</button>
+        <button id="MR" class="variable" onclick="memoryRecall()">MR</button>
+
+        <button id="1" class="operand" onclick="myFunc(1)">1</button>
+        <button id="2" class="operand" onclick="myFunc(2)">2</button>
+        <button id="3" class="operand" onclick="myFunc(3)">3</button>
+        <button id="operation" onclick="myFunc('*')">x</button>
+        <button id="M+" class="variable" onclick="memoryAdd()">M+</button>
+        <button id="+-" class="operation" onclick="changeSign()">+/-</button>
+
+        <button id="0" class="operand" onclick="myFunc(0)">0</button>
+
+        <button id="0" class="operand" onclick="myFunc('.')">.</button>
+        <button id="=" class="operation" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
